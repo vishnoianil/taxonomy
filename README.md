@@ -1,17 +1,28 @@
+# Test PR 4
 # InstructLab 🐶 Taxonomy
 
-## Contents 📖 
+## Contents 📖
 
-- [Welcome to the InstructLab Taxonomy](#welcome-to-the-instructlab-taxonomy)
-- [Learning](#learning)
-- [Getting Started with Skill Contributions](#getting-started-with-skill-contributions)
-  - [Skills: YAML examples](#skills-yaml-examples)
-- [Getting Started with Knowledge Contributions](#getting-started-with-knowledge-contributions)
-  - [Knowledge: YAML examples](#knowledge-yaml-examples)
-- [Taxonomy tree layout](#taxonomy-tree-layout)
-- [Contribute knowledge and skills to the taxonomy!](#contribute-knowledge-and-skills-to-the-taxonomy)
-  - [Ways to contribute](#ways-to-contribute)
+- [Test PR 4](#test-pr-4)
+- [InstructLab 🐶 Taxonomy](#instructlab--taxonomy)
+  - [Contents 📖](#contents-)
+  - [Welcome to the InstructLab Taxonomy](#welcome-to-the-instructlab-taxonomy)
+  - [Learning](#learning)
+  - [Getting Started with Skill Contributions](#getting-started-with-skill-contributions)
+    - [Skills: YAML examples](#skills-yaml-examples)
+      - [Freeform compositional skill: YAML example](#freeform-compositional-skill-yaml-example)
+      - [Freeform compositional skill: Directory tree example](#freeform-compositional-skill-directory-tree-example)
+      - [Grounded compositional skill: YAML example](#grounded-compositional-skill-yaml-example)
+      - [Grounded compositional skill: Directory tree example](#grounded-compositional-skill-directory-tree-example)
+  - [Getting Started with Knowledge Contributions](#getting-started-with-knowledge-contributions)
+    - [Knowledge: YAML examples](#knowledge-yaml-examples)
+      - [Knowledge: Freeform example](#knowledge-freeform-example)
+      - [Knowledge: directory tree example](#knowledge-directory-tree-example)
+  - [Taxonomy tree Layout](#taxonomy-tree-layout)
+  - [Contribute knowledge and skills to the taxonomy!](#contribute-knowledge-and-skills-to-the-taxonomy)
+  - [Ways to Contribute](#ways-to-contribute)
   - [How to contribute skills and knowledge](#how-to-contribute-skills-and-knowledge)
+    - [Why should I contribute?](#why-should-i-contribute)
 ## Welcome to the InstructLab Taxonomy
 
 InstructLab 🐶 uses a novel synthetic data-based alignment tuning method for
@@ -33,7 +44,7 @@ Learn about the concepts of "skills" and "knowledge" in our [InstructLab Communi
 
 ## Getting Started with Skill Contributions
 
-Skills require a much smaller volume of content than knowledge contributions. An entire skill contribution to the taxonomy tree can be just a few lines of YAML in the `qna.yaml` file ("qna" is short for "questions and answers") and an `attribution.txt` file for citing sources. 
+Skills require a much smaller volume of content than knowledge contributions. An entire skill contribution to the taxonomy tree can be just a few lines of YAML in the `qna.yaml` file ("qna" is short for "questions and answers") and an `attribution.txt` file for citing sources.
 
 Your skills contribution pull requests must include the following:
 - A `qna.yaml` that contains a set of key/value entries with the following keys
@@ -81,14 +92,14 @@ seed_examples:
     question: <string>
     answer: |
       <multi-line string>
-  ...  
+  ...
 ```
 
-Then, you create an `attribution.txt` file that includes the sources of your information. These can also be self authored. 
+Then, you create an `attribution.txt` file that includes the sources of your information. These can also be self authored.
 
 *Example `attribution.txt`*
 ```
-[Link to source] 
+[Link to source]
 [Link to work]
 [License of the work]
 [Creator name]
@@ -122,7 +133,7 @@ seed_examples:
   - question: What are 5 words that rhyme with cat?
     answer: bat, gnat, rat, vat, and mat.
   - question: What are 5 words that rhyme with poor?
-    answer: door, shore, core, bore, and tore. 
+    answer: door, shore, core, bore, and tore.
   - question: What are 5 words that rhyme with bank?
     answer: tank, rank, prank, sank, and drank.
   - question: What are 5 words that rhyme with bake?
@@ -143,10 +154,10 @@ in terms of a taxonomy contribution:
     └── freeform
     |   └── haikus <=== here it is :)
     |   |   └── qna.yaml
-    |   |       attribution.txt 
+    |   |       attribution.txt
     │   ├── debate
     │   │   └── qna.yaml
-    |   |       attribution.txt   
+    |   |       attribution.txt
     │   ├── legal
     │   │   ├── agreement
     │   │   |    └── qna.yaml
@@ -156,12 +167,12 @@ in terms of a taxonomy contribution:
 
 #### Grounded compositional skill: YAML example
 
-Remember that [grounded compositional skills](https://github.com/instructlab/community/blob/main/docs/SKILLS_GUIDE.md) require additional context and include a `context` field. 
+Remember that [grounded compositional skills](https://github.com/instructlab/community/blob/main/docs/SKILLS_GUIDE.md) require additional context and include a `context` field.
 
 This example snippet assumes the GitHub username `mairin` and shows some of the question/answer pairs present in the actual file:
 
 ```yaml
-task_description: | 
+task_description: |
     This skill provides the ability to read a markdown-formatted table.
 created_by: mairin # Use your GitHub username; only one creator supported
 seed_examples:
@@ -210,7 +221,7 @@ seed_examples:
     |   └── qualitative
     |   |    ├── sentiment
     |   |    |    └── qna.yaml
-    |   |    |        attribution.txt 
+    |   |    |        attribution.txt
     |   |    └── tone_and_style
     |   |         └── qna.yaml
     |   |             attribution.txt
@@ -237,11 +248,11 @@ Knowledge in the taxonomy tree consists of a few more elements than skills:
 - ⭐ Knowledge submissions require you to create a Git repository, can be with GitHub, that contains the markdown files of your knowledge contributions. These contributions in your repository must use the markdown (.md) format.
 - The `qna.yaml` includes parameters that contain information from your repository.
 
-> [!TIP] 
+> [!TIP]
 > Guidelines for Knowledge contributions
 > - Submit the most up-to-date version of the document
 > - All submissions must be text, images will be ignored
-> - Do not use tables in your markdown freeform contribution 
+> - Do not use tables in your markdown freeform contribution
 
 > [!IMPORTANT]
 > There is a limit to how much content can exist in the question/answer pairs for the model to process. Due to this, only add a maximum
@@ -251,7 +262,7 @@ Each `qna.yaml` file requires a minimum of five question-answer pairs. The `qna.
 ˇ
 - `task_description`: An optional description of the knowledge.
 - `created_by`: Your GitHub username.
-- `domain`: Category of the knowledge. 
+- `domain`: Category of the knowledge.
 - `seed_examples`: Five or more examples sourced from the provided knowledge documents.
   - `question`: A question for the model. This key is required.
   - `answer`: The desired response from the model. This key is required.
@@ -297,12 +308,12 @@ document:
 *Example `attribution.txt` file*
 ```
 Title of work: 96th Academy Awards
-Link to work: https://en.wikipedia.org/wiki/96th_Academy_Awards 
+Link to work: https://en.wikipedia.org/wiki/96th_Academy_Awards
 License of the work: CC-BY-SA-4.0
 Creator names: Wikipedia Authors
 ```
 
-This knowledge example references one markdown file: `oscars2024_results.md`. You can also add multiple files for knowledge contributions. 
+This knowledge example references one markdown file: `oscars2024_results.md`. You can also add multiple files for knowledge contributions.
 
 > [!NOTE]
 > Due to the higher volume, **it will naturally take longer to receive acceptance for
@@ -342,7 +353,7 @@ Director](Academy_Award_for_Best_Director "wikilink")
 
 In the taxonomy repository, here's what the previously referenced knowledge might look like in the tree:
 
-#### Knowledge: directory tree example 
+#### Knowledge: directory tree example
 
 ```ascii
 [...]
@@ -362,7 +373,7 @@ In the taxonomy repository, here's what the previously referenced knowledge migh
 ```
 For more information on what to include in your `attribution.txt` file, see [For your attribution.txt file](https://github.com/instructlab/taxonomy/blob/main/CONTRIBUTING.md#for-your-attributiontxt-file) in CONTRIBUTING.md.
 
-You can organize the knowledge markdown files in your repository however you want. You just need to ensure the YAML is pointing to the correct file. 
+You can organize the knowledge markdown files in your repository however you want. You just need to ensure the YAML is pointing to the correct file.
 
 ## Taxonomy tree Layout
 
@@ -370,8 +381,8 @@ The taxonomy tree is organized in a cascading directory structure. At the end of
 each branch, there is a YAML file (qna.yaml) that contains the examples for that
 domain. Maintainers can decide to change the names of the existing branches or to add new branches.
 
-> [!IMPORTANT] 
-> Folder names do not have spaces. 
+> [!IMPORTANT]
+> Folder names do not have spaces.
 
 Below is an illustrative directory structure to show this layout:
 
@@ -431,10 +442,10 @@ You can contribute to the taxonomy in the following two ways:
 1. Adding new examples to **existing leaf nodes**:
 2. Adding **new branches/skills** corresponding to the existing domain:
 
-For more information, see the [Ways of contributing to the taxonomy repository](https://github.com/instructlab/taxonomy/blob/main/CONTRIBUTING.md#ways-of-contributing-to-the-taxonomy-repository) documentation. 
+For more information, see the [Ways of contributing to the taxonomy repository](https://github.com/instructlab/taxonomy/blob/main/CONTRIBUTING.md#ways-of-contributing-to-the-taxonomy-repository) documentation.
 ## How to contribute skills and knowledge
 
-To contribute to this repo, you'll use the _Fork and Pull_ model common in many open source repositories. You can add your skills and knowledge to the taxonomy in multiple ways; for additional information on how to make a contribution, see the [Documentation on contributing](CONTRIBUTING.md). You can also use the following guides to help with contributing: 
+To contribute to this repo, you'll use the _Fork and Pull_ model common in many open source repositories. You can add your skills and knowledge to the taxonomy in multiple ways; for additional information on how to make a contribution, see the [Documentation on contributing](CONTRIBUTING.md). You can also use the following guides to help with contributing:
 - Contributing using the [GitHub webpage UI](docs/contributing_via_GH_UI.md).
 - Contributing knowledge to the taxonomy in the [Knowledge contribution guidelines](docs/knowledge-contribution-guide.md).
 
