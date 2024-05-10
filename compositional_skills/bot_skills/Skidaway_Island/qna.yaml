@@ -1,18 +1,18 @@
 task_description: Dummy skill pushed through bot
 created_by: Anil Kumar Vishnoi
 seed_examples:
-- question: anil
-  context: kumar
-  answer: anil
-- question: anil
-  context: kumar
-  answer: anil
-- question: anil
-  context: kumar
-  answer: anil
-- question: anil
-  context: kumar
-  answer: anil
-- question: anil
-  context: kumar
-  answer: anil
+  - question: anil
+    context: kumar
+    answer: anil
+  - question: anil
+    context: kumar
+    answer: anil
+  - question: anil
+    context: kumar
+    answer: anil
+  - question: anil
+    context: kumar
+    answer: anil
+  - question: anil
+    context: kumar
+    answer: anil
