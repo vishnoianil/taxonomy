@@ -1,0 +1,9 @@
+task_description: Dummy skill pushed through bot
+created_by: Anil Kumar Vishnoi
+seed_examples: [{question: anil, context: kumar, answer: anil}, {question: anil, context: kumar,
+    answer: anil}, {question: anil, context: kumar, answer: anil}, {question: anil,
+    context: kumar, answer: anil}, {question: anil, context: kumar, answer: anil}]
+Title of work: Title of work 
+Link to work: Link of work 
+License of the work: Free license 
+Creator names: Anil
