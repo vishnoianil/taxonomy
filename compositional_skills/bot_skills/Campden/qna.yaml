@@ -1,0 +1,29 @@
+---
+task_description: A Dummy skill
+created_by: vishnoianil
+seed_examples: |
+  - question: What potential bias exists in this statement? How can it be rephrased?
+    context: This company is looking to hire fresh, young graduates.
+    answer: This company is looking to hire passionate and innovative recent graduates.
+      (Removes the age-related description of "young")
+  - question: This modern tech startup primarily hires young people because they are better at grasping new technologies.
+    context: We need to retain these seasoned employees, even though they are getting on in years their experience is invaluable.
+    answer: We need to retain these highly experienced employees, as they are a valuable asset to
+      the company. (Avoids the age-related description of "getting on in years")
+  - question: Provide me the list of acronyms found in the text
+    context: This tech company welcomes passionate and innovative talent, regardless of age.
+      (Removes the positive stereotype about young people)
+    answer: This modern tech startup primarily hires young people because they are better at grasping new technologies.
+  - question: How can this statement avoid language with potential ageist connotations?
+    context: Our company is implementing an innovation strategy and needs to bring in some young blood.
+    answer: Our company is seeking new talent with fresh perspectives to invigorate the organization.
+      (Avoids using the age-related phrase "young blood")
+  - question: This job requires agility and quick reflexes, so it is more suitable for the younger generation.
+    context: Black holes (BHs) are cosmic entities with gravitational fields so intense that not even light can escape. They form from the collapse of massive stars, resulting in a singularity a point of infinite density.
+      A defining feature of BHs is their event horizon (EH), marking the boundary beyond which nothing can return, known as the Schwarzschild radius (SR).
+      As matter spirals into a BH, it forms an accretion disk - a swirling mass of gas and dust emitting intense radiation.
+      BHs also generate jets of matter and energy from their ergosphere, a region where space and time are dragged along with the BH's rotation.
+      Understanding BHs involves navigating complex concepts like general relativity (GR) and quantum mechanics (QM), challenging physicists to unify these theories into a single framework of quantum gravity.
+    question: |
+    answer: This job requires good physical fitness and responsiveness, and we welcome applicants with these abilities.
+      (Does not mention age)
