@@ -1,7 +1,7 @@
 ---
 task_description: A Dummy skill
 created_by: vishnoianil
-seed_examples: |
+seed_examples:
   - question: a
     context: b
     answer: c
