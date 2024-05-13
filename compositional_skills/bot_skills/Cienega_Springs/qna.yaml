@@ -1,0 +1,19 @@
+---
+task_description: Dummy Skill for Demo
+created_by: Anil Kumar Vishnoi
+seed_examples: |
+  - question: demo-question-1
+    context: demo-context-1
+    answer: demo-answer-1
+  - question: demo-question-2
+    context: demo-context-2
+    answer: demo-answer-2
+  - question: demo-question-3
+    context: demo-context-3
+    answer: demo-answer-3
+  - question: demo-question-4
+    context: demo-context-4
+    answer: demo-answer-4
+  - question: demo-question-5
+    context: demo-context-5
+    answer: demo-answer-5
