@@ -1,0 +1,18 @@
+task_description: Dummy task
+created_by: Anil Kumar Vishnoi
+seed_examples:
+    - question: a
+      context: a
+      answer: a
+    - question: b
+      context: b
+      answer: b
+    - question: c
+      context: c
+      answer: c
+    - question: d
+      context: d
+      answer: d
+    - question: e
+      context: e
+      answer: e
