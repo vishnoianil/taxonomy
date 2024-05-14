@@ -1,0 +1,28 @@
+task_description: vishnoianil@gmail.com
+created_by: vishnoianil@gmail.com
+domain: vishnoianil@gmail.com
+seed_examples:
+    - question: >-
+        a
+      answer: >-
+        a
+    - question: >-
+        b
+      answer: >-
+        b
+    - question: >-
+        c
+      answer: >-
+        c
+    - question: >-
+        d
+      answer: >-
+        d
+    - question: >-
+        e
+      answer: >-
+        e
+document:
+    repo: https://github.com/instructlab.git
+    commit: asdfadsf
+    patterns: test.md
