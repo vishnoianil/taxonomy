@@ -1,0 +1,18 @@
+task_description: Dummy skill test -1
+created_by: Anil Kumar Vishnoi
+seed_examples:
+    - question: demo-question-1
+      context: demo-context-1
+      answer: demo-answer-1
+    - question: demo-question-2
+      context: demo-context-2
+      answer: demo-answer-2
+    - question: Write an AI agent, that takes the events (critical) from openshift and debug the event and take or suggest possible action? It can leverage all the observability data. Write an AI agent, that digest the telemetry data and the objective is to make sure to tune the request batching of the model as per the cpu/memory/disk pressure etc.
+      context: demo-context-3
+      answer: demo-answer-3
+    - question: demo-question-4
+      context: demo-context-4
+      answer: demo-answer-4
+    - question: demo-question-5
+      context: demo-context-5
+      answer: demo-answer-5
