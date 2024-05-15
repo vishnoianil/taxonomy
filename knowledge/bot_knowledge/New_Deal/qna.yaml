@@ -1,0 +1,28 @@
+task_description: Dummy knowledge
+created_by: Anil Kumar Vishnoi
+domain: testing
+seed_examples:
+    - question: >-
+        a
+      answer: >-
+        a
+    - question: >-
+        b
+      answer: >-
+        b
+    - question: >-
+        c
+      answer: >-
+        c
+    - question: >-
+        d
+      answer: >-
+        d
+    - question: "Write an AI agent, that takes the events (critical) from openshift and debug the event and take or suggest possible action? It can leverage all the observability data. \nWrite an AI agent, that digest the telemetry data and the objective is to make sure to tune the request batching of the model as per the cpu/memory/disk pressure etc."
+      answer: "Write an AI agent, that takes the events (critical) from openshift and debug the event and take or suggest possible action? It can leverage all the observability data. \nWrite an AI agent, that digest the telemetry data and the objective is to make sure to tune the request batching of the model as per the cpu/memory/disk pressure etc."
+document:
+    repo: http://github.com/vishnoianil/taxonomy.git
+    commit: asdfads
+    patterns:
+        - test.md
+        - test1.md
