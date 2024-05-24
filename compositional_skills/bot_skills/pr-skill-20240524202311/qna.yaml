@@ -1,0 +1,66 @@
+task_description: Write an AI agent, that takes the events (critical) from openshift and debug the event and take or suggest possible action? It can leverage all the observability data. Write an AI agent, that digest the telemetry data and the objective is to make sure to tune the request batching of the model as per the cpu/memory/disk pressure etc.
+created_by: Anil Kumar Vishnoi
+seed_examples:
+    - question: >
+        Write an AI agent, that takes the events (critical) from openshift and debug the event and take or suggest
+
+        possible action? It can leverage all the observability data. Write an AI agent, that digest the telemetry
+
+        data and the objective is to make sure to tune the request batching of the model as per the cpu/memory/disk
+
+        pressure etc.
+
+      context: >
+        Write an AI agent, that takes the events (critical) from openshift and debug the event and take or suggest
+
+        possible action? It can leverage all the observability data. Write an AI agent, that digest the telemetry
+
+        data and the objective is to make sure to tune the request batching of the model as per the cpu/memory/disk
+
+        pressure etc.
+
+      answer: >
+        Write an AI agent, that takes the events (critical) from openshift and debug the event and take or suggest
+
+        possible action? It can leverage all the observability data. Write an AI agent, that digest the telemetry
+
+        data and the objective is to make sure to tune the request batching of the model as per the cpu/memory/disk
+
+        pressure etc.
+
+    - question: >
+        b
+
+      context: >
+        b
+
+      answer: >
+        b
+
+    - question: >
+        c
+
+      context: >
+        c
+
+      answer: >
+        c
+
+    - question: >
+        d
+
+      context: >
+        d
+
+      answer: >
+        d
+
+    - question: >
+        e
+
+      context: >
+        e e
+
+      answer: >
+        e
+
