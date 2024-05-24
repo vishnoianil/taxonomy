@@ -1,0 +1,33 @@
+task_description: vishnoianil@gmail.com
+created_by: vishnoianil@gmail.com
+seed_examples:
+    - question: >-
+        a
+      context: >-
+        a
+      answer: >-
+        a
+    - question: >-
+        b
+      context: >-
+        b
+      answer: >-
+        b
+    - question: >-
+        w
+      context: >-
+        w
+      answer: >-
+        w
+    - question: >-
+        e
+      context: >-
+        e
+      answer: >-
+        e
+    - question: >-
+        q
+      context: >-
+        q
+      answer: >-
+        q
