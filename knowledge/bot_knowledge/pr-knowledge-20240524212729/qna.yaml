@@ -1,0 +1,29 @@
+task_description: test knowledge
+created_by: Anil Kumar
+domain: test domain
+seed_examples:
+    - question: >-
+        a
+      answer: >-
+        a
+    - question: >-
+        b
+      answer: >-
+        b
+    - question: >-
+        v
+      answer: >-
+        vf
+    - question: >-
+        f
+      answer: >-
+        f
+    - question: >-
+        d
+      answer: >-
+        d
+document:
+    repo: no url
+    commit: adsfadsf
+    patterns:
+        - test.md
